@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Home</title>
+  <title>Flutter</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../styles/main.css">
@@ -11,20 +11,20 @@
 <body>
     <header>
         <h1>Flutter</h1>
-        <input id="search" placeholder="Search">
-        <img src="./icons/search.svg" alt="Search" class="search-icon">
+        <label for="search"></label><input id="search" placeholder="Search">
+        <img src="../icons/search.svg" alt="Search" class="search-icon">
     </header>
     <main>
         <div class="profile">
-            <img src="./icons/profile.png" alt="Profile">
+            <img src="../icons/profile.svg" alt="Profile">
             <h4>Martin Hristov</h4>
             <section class="profile-info">
                 <div class="profile-stats">
-                    <div class="profile-stats-badge">
+                    <div class="stats-on-profile">
                         <div>Posts</div>
                         <div>1</div>
                     </div>
-                    <div class="profile-stats-badge">
+                    <div class="stats-on-profile">
                         <div>Reactions</div>
                         <div>7</div>
                     </div>
@@ -36,50 +36,54 @@
         </div>
         <div class="posts">
             <div class="write-post">
-                <img src="./icons/profile.png" alt="Profile">
+                <img src="../icons/profile.svg" alt="Profile">
                 <input type="text" placeholder="Say something">
-                <img id="comment-icon" src="icons/comment.svg" alt="Comment">
+                <a href="#">
+                    <img id="comment" src="../icons/comment.svg" alt="Comment">
+                </a>
             </div>
             <div class="post">
-                <img class="avatar" src="./icons/profile.png" alt="Profile">
-                <div class="post-content">
-                    <div class="header">
+                <img class="profile" src="../icons/profile.svg" alt="Profile">
+                <div class="post-body">
+                    <div class="post-header">
                         <div>
                             <div class="author">Ivan Ivanov</div>
-                            <div class="timestamp">&bull; 0 seconds ago</div>
+                            <div class="time">&bull; 0 seconds ago</div>
                         </div>
-                        <img class="close-icon" src="./icons/close.svg" alt="Close">
+                        <img class="cancel" src="../icons/cancel.svg" alt="Close">
                     </div>
-                    <div class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <div class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a lacinia erat, tincidunt porttitor risus.
+                        Praesent at lacus nunc. Ut ornare scelerisque tempor. Sed at enim mattis, elementum elit a, vulputate eros.
+                        Vestibulum maximus nisl et iaculis commodo. Fusce sollicitudin ullamcorper dignissim.
+                        Nam non velit eget metus mattis congue vitae vitae ligula.
+                        Nunc pulvinar, sapien nec dapibus bibendum, mauris elit congue lectus, id rutrum justo nunc dictum tellus.
+                        Aliquam sit amet viverra massa. Donec nisl turpis, molestie a tempor ut, gravida id massa.
                     </div>
                     <div class="reactions">
-                        <img class="reactions-icon" src="./icons/like.svg" alt="Like">
-                        <span class="reactions-counter">5</span>
-                        <img class="reactions-icon" src="./icons/dislike.svg" alt="Dislike">
-                        <span class="reactions-counter">3</span>
+                        <img class="reaction" src="../icons/like.svg" alt="Like">
+                        <span class="count">5</span>
+                        <img class="reaction" src="../icons/dislike.svg" alt="Dislike">
+                        <span class="count">3</span>
                     </div>
                 </div>
             </div>
             <div class="post">
-                <img class="avatar" src="./icons/profile.png" alt="Profile">
-                <div class="post-content">
-                    <div class="header">
+                <img class="profile" src="../icons/profile.svg" alt="Profile">
+                <div class="post-body">
+                    <div class="post-header">
                         <div>
                             <div class="author">Martin</div>
-                            <div class="timestamp">&bull; Last month</div>
+                            <div class="time">&bull; Last month</div>
                         </div>
-                        <img class="close-icon" src="./icons/close.svg" alt="Close">
+                        <img class="cancel" src="../icons/cancel.svg" alt="Close">
                     </div>
-                    <div class="message">Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <div class="message">Molit consequat ipsum laboris incididunt sunt deserunt velit elit eu proident.
                     </div>
                     <div class="reactions">
-                        <img class="reactions-icon" src="./icons/like.svg" alt="Like">
-                        <span class="reactions-counter">3</span>
-                        <img class="reactions-icon" src="./icons/dislike.svg" alt="Dislike">
-                        <span class="reactions-counter">0</span>
+                        <img class="reaction" src="../icons/like.svg" alt="Like">
+                        <span class="count">3</span>
+                        <img class="reaction" src="../icons/dislike.svg" alt="Dislike">
+                        <span class="count">0</span>
                     </div>
                 </div>
             </div>
